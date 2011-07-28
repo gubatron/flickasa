@@ -1,10 +1,10 @@
 -= INTRODUCTION =-
 
-With over 23,000 pictures on my Flickr account, feeling a little uncertain about the future of Flickr with Yahoo! closing projects left and right I tried several options to export my flickr pictures.
+With over 23,000 pictures on my Flickr account I started feeling a little uncertain about the future of Flickr with Yahoo! closing projects left and right I tried several options to export my flickr pictures.
 
-Enter Google+ and Picasa, a far more interesting combination to store my pictures for free than Facebook limited mainstream approach I needed a script to migrate my 23,589 pictures from Flickr to Picasa.
+Enter Google+ and Picasa, a far more interesting combination to store my pictures for free than Facebook's limited mainstream approach I needed a script to migrate my 23,589 pictures from Flickr to Picasa.
 
-A friend recommended me a python script shown on a blog post at http://www.edparsons.com/2011/06/migrating-from-flickr-to-picasaweb/
+A friend on Google+ recommended a python script shown on a blog post at http://www.edparsons.com/2011/06/migrating-from-flickr-to-picasaweb/
 
 This is slightly modified version of this script, it handles some exceptions that were probably not ocurring at the time the original author wrote it, and it managed to export all my 23,589 pictures (without breaking to an Exception during the entire run)
 
