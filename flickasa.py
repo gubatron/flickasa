@@ -111,18 +111,11 @@ class Setting(object):
 
 FLICKR = None
 
-####################################################################################
-# ENTER YOUR PICASA AND FLICKR ACCOUNT CREDENTIALS HERE
-####################################################################################
-    
 picasa_username = Setting('Picasa Username(complete email)',GMAIL_ACCOUNT)
 picasa_password = Setting('Picasa Password', default=GMAIL_PASSWORD,input_retriever=passwd_input_retriever)
 
 flickr_api_key = Setting('Flickr API Key',default=FLICKR_API_KEY)
 flickr_api_secret = Setting('Flickr API Secret',default=FLICKR_API_SECRET)
-
-####################################################################################
-####################################################################################
 
 flickr_usernsid = None
 
