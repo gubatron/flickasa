@@ -264,7 +264,12 @@ def do_migration(threadpoolsize=7):
 
     
         if flickr_photo.get('media') == 'photo':
-            gd_client.InsertPhoto(picasa_album, picasa_photo, filename, content_type=headers.get('content-type', 'image/jpeg'))
+            try:
+                gd_client.InsertPhoto(picasa_album, picasa_photo, filename, content_type=headers.get('content-type', 'image/jpeg'))
+            except GooglePhotosException,e:
+                os.close(fd)
+                os.remove(filename)
+                return
         else:
             gd_client.InsertVideo(picasa_album, picasa_photo, filename, content_type=headers.get('content-type', 'video/avi'))
 
