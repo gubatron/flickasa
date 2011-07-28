@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse-pydev version="1.0"?>
+
+<pydev_project>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">Default</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.6</pydev_property>
+<pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
+<path>/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/flickrapi-1.4.2-py2.6.egg</path>
+<path>/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/gdata-2.0.14-py2.6.egg</path>
+<path>/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/threadpool-1.2.7-py2.6.egg</path>
+</pydev_pathproperty>
+</pydev_project>

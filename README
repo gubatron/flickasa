@@ -1,8 +1,9 @@
 -= INTRODUCTION =-
 
-With over 23,000 pictures on my Flickr account I started feeling a little uncertain about the future of Flickr with Yahoo! closing projects left and right I tried several options to export my flickr pictures.
+With over 23,000 pictures on my Flickr account and Yahoo! closing projects left and right I began to feel a little nervous and I tried several options to export my Flickr pictures.
+Tried different free software solutions but none of them worked all the way, they would always fail in one way or another. Also, having all my pictures in my local drive isn't too convenient when it comes to sharing with friends and family.
 
-Enter Google+ and Picasa, a far more interesting combination to store my pictures for free than Facebook's limited mainstream approach I needed a script to migrate my 23,589 pictures from Flickr to Picasa.
+Google+ Circles launches with Picasa integration, a far more interesting combination to store my pictures than Facebook's limited main stream solution, now I knew I needed a script to migrate my 23,589 pictures from Flickr to Picasa.
 
 A friend on Google+ recommended a python script shown on a blog post at http://www.edparsons.com/2011/06/migrating-from-flickr-to-picasaweb/
 
@@ -23,7 +24,7 @@ You can obtain these at http://www.flickr.com/services/apps/create/noncommercial
 
 -= CONFIGURATION =-
 
-Open flickasa.py with your favorite text editor and go to line 120 to configure your Picasa and Flickr Account Credentials.
+Save 'conf.py.sample' as 'conf.py' and enter the appropiate Flickr and Picasa credentials in the configuration variables declared in it.
 
 -= RUNNING =-
 

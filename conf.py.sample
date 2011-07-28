@@ -1,0 +1,11 @@
+#SAVE THIS FILE AS conf.py and enter your credentials in the configuration variables below.
+
+#CONFIGURE YOUR GMAIL ACCOUNT CREDENTIALS
+GMAIL_ACCOUNT='yourEmail@gmail.com'
+GMAIL_PASSWORD=''
+
+#CONFIGURE YOUR FLICKR API CREDENTIALS
+#If you don't have them get them at 
+#http://www.flickr.com/services/apps/create/noncommercial/
+FLICKR_API_KEY=''
+FLICKR_API_SECRET=''

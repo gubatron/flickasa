@@ -3,10 +3,6 @@
 # requires flickrapi and gdata
 #
 # It's a little ugly, but it is heavily tested and works!
-#
-#
-#
-
 import flickrapi, StringIO
 import gdata
 import gdata.data
@@ -25,6 +21,8 @@ import atom.service
 import atom
 import gdata.photos
 from shutil import copyfile
+
+from conf import *
 
 from gdata.photos.service import GPHOTOS_INVALID_ARGUMENT, GPHOTOS_INVALID_CONTENT_TYPE, GooglePhotosException
 
@@ -117,11 +115,11 @@ FLICKR = None
 # ENTER YOUR PICASA AND FLICKR ACCOUNT CREDENTIALS HERE
 ####################################################################################
     
-picasa_username = Setting('Picasa Username(complete email)','yourGMailHere@gmail.com')
-picasa_password = Setting('Picasa Password', default='yourGMailPasswordHere',input_retriever=passwd_input_retriever)
+picasa_username = Setting('Picasa Username(complete email)',GMAIL_ACCOUNT)
+picasa_password = Setting('Picasa Password', default=GMAIL_PASSWORD,input_retriever=passwd_input_retriever)
 
-flickr_api_key = Setting('Flickr API Key',default='your flickr api key here')
-flickr_api_secret = Setting('Flickr API Secret',default='your flickr api key secret here')
+flickr_api_key = Setting('Flickr API Key',default=FLICKR_API_KEY)
+flickr_api_secret = Setting('Flickr API Secret',default=FLICKR_API_SECRET)
 
 ####################################################################################
 ####################################################################################
