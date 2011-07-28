@@ -6,13 +6,13 @@ Enter Google+ and Picasa, a far more interesting combination to store my picture
 
 A friend on Google+ recommended a python script shown on a blog post at http://www.edparsons.com/2011/06/migrating-from-flickr-to-picasaweb/
 
-This is slightly modified version of this script, it handles some exceptions that were probably not ocurring at the time the original author wrote it, and it managed to export all my 23,589 pictures (without breaking to an Exception during the entire run)
+This is slightly modified version of that script. It handles some exceptions that were probably not ocurring at the time the original author wrote it. As of July 2011 it managed to export all my 23,589 pictures (without breaking to an Exception during the entire run)
 
 -= REQUIREMENTS =-
 
 Python 2.6 recommended.
 
-Requires flickrapi and gdata. You can installe these by issuing the following commands.
+Requires flickrapi and gdata. You can install these by issuing the following commands on your terminal.
 
 $ easy_install-2.6 gdata
 $ easy_install-2.6 flickrapi
@@ -23,15 +23,15 @@ You can obtain these at http://www.flickr.com/services/apps/create/noncommercial
 
 -= CONFIGURATION =-
 
-Open flickasa.py, go to line 120 and start configuring your Picasa and Flickr Account Credentials.
+Open flickasa.py with your favorite text editor and go to line 120 to configure your Picasa and Flickr Account Credentials.
 
 -= RUNNING =-
 
-After you've configured your credentials, just fire up the script on your terminal
+After you've configured your credentials just fire up the script on your terminal
 
 $ python flickasa.py
 
-If for some weird reason the script stops, just launch it again, it will re-scan your flickr account but it will only start uploading the pictures it hasn't already uploaded.
+If for some weird reason the script stops, just launch it again, it will re-scan your flickr account again but it will pickup right where it left the last time.
 
 -= LICENSE =-
 
