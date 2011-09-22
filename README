@@ -21,6 +21,7 @@ $ easy_install-2.6 threadpool
 
 You will need a Flickr API Key and Secret to get the script to work.
 You can obtain these at http://www.flickr.com/services/apps/create/noncommercial/
+Note: if "easy_install-2.6" doesn't work Josiah Ritchie says that "easy-install" worked for him in Ubuntu.
 
 -= CONFIGURATION =-
 
