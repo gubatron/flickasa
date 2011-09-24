@@ -229,6 +229,11 @@ def do_migration(threadpoolsize=7):
             return
     
         photo_url = get_photo_url(flickr_photo)
+        if photo_url is None:
+            print 'Could not get photo url, skipping.'
+            return
+
+
         print 'Downloading photo "%s" at url "%s".' % (flickr_photo.get('title'), photo_url)
         (fd, filename) = tmp_file = mkstemp()
         (filename, headers) = urlretrieve(photo_url, filename, download_callback)
