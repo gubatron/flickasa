@@ -259,7 +259,7 @@ def do_migration(threadpoolsize=7):
         photo_info = FLICKR.photos_getInfo(photo_id=flickr_photo.get('id')).find('photo')
         picasa_photo.media.keywords = gdata.media.Keywords()
         picasa_photo.media.keywords.text = ', '.join([t.get('raw') for t in photo_info.find('tags').getchildren()])
-        picasa_photo.summary.text = photo_info.find('description').text
+        picasa_photo.summary.text = photo_info.find('description').text or flickr_photo.get('title')
 
         #random pause between 1 to 5 seconds
         s = random.randint(0,3)
